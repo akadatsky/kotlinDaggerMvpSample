@@ -1,4 +1,4 @@
-package com.akadatsky.testdaggermvp.mvp
+package com.akadatsky.testdaggermvp.main
 
 import android.os.Bundle
 import com.akadatsky.testdaggermvp.R
@@ -14,20 +14,11 @@ class MainActivity : DaggerAppCompatActivity(), MainContract.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        mPresenter.takeView(this)
-    }
-
-    override fun onDestroy() {
-        mPresenter.dropView()
-        super.onDestroy()
+        mPresenter.init()
     }
 
     override fun showMessage() {
-        textView.text = "ASDF"
+        textView.text = "Hello Dagger MVP!"
     }
 
 }

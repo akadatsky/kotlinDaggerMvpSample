@@ -1,7 +1,7 @@
 package com.akadatsky.testdaggermvp.di
 
-import com.akadatsky.testdaggermvp.mvp.MainActivity
-import com.akadatsky.testdaggermvp.mvp.MainModule
+import com.akadatsky.testdaggermvp.main.MainActivity
+import com.akadatsky.testdaggermvp.main.MainModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

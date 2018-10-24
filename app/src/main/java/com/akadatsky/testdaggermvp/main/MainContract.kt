@@ -1,4 +1,4 @@
-package com.akadatsky.testdaggermvp.mvp
+package com.akadatsky.testdaggermvp.main
 
 import com.akadatsky.testdaggermvp.BasePresenter
 import com.akadatsky.testdaggermvp.BaseView
@@ -9,6 +9,8 @@ interface MainContract {
         fun showMessage()
     }
 
-    interface Presenter : BasePresenter<View>
+    interface Presenter : BasePresenter<View> {
+        fun init()
+    }
 
 }

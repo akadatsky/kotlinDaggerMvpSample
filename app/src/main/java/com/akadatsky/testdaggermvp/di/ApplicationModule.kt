@@ -7,6 +7,8 @@ import dagger.Module
 
 @Module
 abstract class ApplicationModule {
+
     @Binds
-    internal abstract fun bindContext(application: Application): Context
+    abstract fun bindContext(application: Application): Context
+
 }
